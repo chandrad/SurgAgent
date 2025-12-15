@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SurgAgent: AI-Powered Surgical Instrument Tracking
 
 **Team**: SurgAgent | **Hackathon**: Google Agentic AI App Hackathon - December 2025
@@ -53,7 +52,7 @@ An agentic tracking system powered by **Google Gemini** that:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_TEAM/SurgAgent.git
+git clone https://github.com/chandrad/SurgAgent.git
 cd SurgAgent
 
 # Create environment
@@ -214,6 +213,3 @@ Apache 2.0 (Code) | CC BY-NC-SA 4.0 (Dataset)
 ---
 
 *Built for the Google Agentic AI App Hackathon - December 2025*
-=======
-# SurgAgent
->>>>>>> c9aff8700d1323e81d5a033cf1640fec267ddc95
