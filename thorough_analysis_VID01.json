@@ -1,0 +1,582 @@
+{
+  "video": "VID01",
+  "ground_truth_stats": {
+    "total_frames": 1516,
+    "instruments": {
+      "grasper": 1344,
+      "hook": 785,
+      "irrigator": 122,
+      "bipolar": 122,
+      "clipper": 102,
+      "scissors": 19,
+      "specimen-bag": 133
+    },
+    "phases": {
+      "preparation": 21,
+      "calot_triangle_dissection": 969,
+      "clipping_and_cutting": 292,
+      "gallbladder_dissection": 878,
+      "gallbladder_packaging": 249,
+      "cleaning_and_coagulation": 136,
+      "gallbladder_retraction": 82
+    },
+    "challenges": {
+      "occluded": 1980,
+      "bleeding": 1775,
+      "smoke": 353,
+      "blurred": 24,
+      "reflection": 12,
+      "stainedlens": 17
+    }
+  },
+  "gemini_analysis": {
+    "frames_analyzed": 15,
+    "instrument_accuracy": "73%",
+    "phase_accuracy": "47%"
+  },
+  "comparisons": [
+    {
+      "frame": 526,
+      "timestamp_s": 21.04,
+      "ground_truth": {
+        "frame": 526,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "preparation",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 8,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize CNN-based object detection (e.g., YOLO, Mask R-CNN) fine-tuned with laparoscopic surgical instrument datasets for accurate instrument localization and tracking. Consider temporal smoothing techniques (e.g., Kalman filtering) to improve tracking robustness in the presence of motion blur or brief occlusions."
+      },
+      "processing_time": 3.6012492179870605,
+      "matches": {
+        "instrument_count": true,
+        "phase": false
+      }
+    },
+    {
+      "frame": 3076,
+      "timestamp_s": 123.04,
+      "ground_truth": {
+        "frame": 3076,
+        "instruments": [
+          "hook",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based segmentation with attention mechanisms to handle occlusions and specular reflections. Utilize temporal information for tracking instruments across frames."
+      },
+      "processing_time": 2.36694598197937,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 5601,
+      "timestamp_s": 224.04,
+      "ground_truth": {
+        "frame": 5601,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a CNN-based object detection model like YOLO or Mask R-CNN, fine-tuned on laparoscopic video data. Incorporate temporal information using recurrent neural networks (RNNs) or LSTMs to improve tracking accuracy and handle occlusions or motion blur."
+      },
+      "processing_time": 2.3679957389831543,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 8351,
+      "timestamp_s": 334.04,
+      "ground_truth": {
+        "frame": 8351,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a shape-based tracking algorithm, complemented by color-based segmentation for robustness against blood and occlusion. Prioritize tracking of the grasper's jaws."
+      },
+      "processing_time": 1.9302809238433838,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 11276,
+      "timestamp_s": 451.04,
+      "ground_truth": {
+        "frame": 11276,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use a CNN-based object detection model (e.g., YOLO, Faster R-CNN) fine-tuned on laparoscopic data, incorporating attention mechanisms to handle occlusion and color variations."
+      },
+      "processing_time": 2.147819995880127,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 14551,
+      "timestamp_s": 582.04,
+      "ground_truth": {
+        "frame": 14551,
+        "instruments": [
+          "hook",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ deep learning-based object detection with attention mechanisms to focus on instrument features. Utilize temporal information to track movements and mitigate occlusion."
+      },
+      "processing_time": 1.9750678539276123,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 17076,
+      "timestamp_s": 683.04,
+      "ground_truth": {
+        "frame": 17076,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use CNN based object detection and tracking. Incorporate color based segmentation to help with blood and tissue visibility."
+      },
+      "processing_time": 2.050837993621826,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 20051,
+      "timestamp_s": 802.04,
+      "ground_truth": {
+        "frame": 20051,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "smoke",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize CNN based object detection with attention mechanisms to handle occlusion and color variations due to blood."
+      },
+      "processing_time": 2.2409160137176514,
+      "matches": {
+        "instrument_count": true,
+        "phase": false
+      }
+    },
+    {
+      "frame": 23251,
+      "timestamp_s": 930.04,
+      "ground_truth": {
+        "frame": 23251,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Utilize shape and color based tracking algorithms. Consider incorporating depth estimation to improve tracking through occlusion."
+      },
+      "processing_time": 2.896449089050293,
+      "matches": {
+        "instrument_count": true,
+        "phase": false
+      }
+    },
+    {
+      "frame": 27001,
+      "timestamp_s": 1080.04,
+      "ground_truth": {
+        "frame": 27001,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection with instance segmentation to differentiate between the instruments and handle occlusion.  Consider using temporal information from video for improved tracking."
+      },
+      "processing_time": 2.637824058532715,
+      "matches": {
+        "instrument_count": true,
+        "phase": false
+      }
+    },
+    {
+      "frame": 29526,
+      "timestamp_s": 1181.04,
+      "ground_truth": {
+        "frame": 29526,
+        "instruments": [
+          "hook",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use of a combination of shape and color based tracking, alongside with depth information, could prove the best for instruments tracking"
+      },
+      "processing_time": 2.4252870082855225,
+      "matches": {
+        "instrument_count": true,
+        "phase": true
+      }
+    },
+    {
+      "frame": 32051,
+      "timestamp_s": 1282.04,
+      "ground_truth": {
+        "frame": 32051,
+        "instruments": [
+          "hook",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "smoke",
+          "occlusion",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 5,
+        "estimated_phase": "unknown",
+        "error": "429 You exceeded your current quota. Please migrate to Gemini 2.5 Flash Image (models/gemini-2.5-flash-image) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+      },
+      "processing_time": 0.27031922340393066,
+      "matches": {
+        "instrument_count": false,
+        "phase": false
+      }
+    },
+    {
+      "frame": 34576,
+      "timestamp_s": 1383.04,
+      "ground_truth": {
+        "frame": 34576,
+        "instruments": [
+          "hook",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 5,
+        "estimated_phase": "unknown",
+        "error": "429 You exceeded your current quota. Please migrate to Gemini 2.5 Flash Image (models/gemini-2.5-flash-image) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+      },
+      "processing_time": 0.28785204887390137,
+      "matches": {
+        "instrument_count": false,
+        "phase": false
+      }
+    },
+    {
+      "frame": 37651,
+      "timestamp_s": 1506.04,
+      "ground_truth": {
+        "frame": 37651,
+        "instruments": [
+          "grasper",
+          "specimen-bag"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "smoke",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 5,
+        "estimated_phase": "unknown",
+        "error": "429 You exceeded your current quota. Please migrate to Gemini 2.5 Flash Image (models/gemini-2.5-flash-image) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 35\n}\n]"
+      },
+      "processing_time": 0.20216894149780273,
+      "matches": {
+        "instrument_count": false,
+        "phase": false
+      }
+    },
+    {
+      "frame": 40176,
+      "timestamp_s": 1607.04,
+      "ground_truth": {
+        "frame": 40176,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "occlusion",
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 5,
+        "estimated_phase": "unknown",
+        "error": "429 You exceeded your current quota. Please migrate to Gemini 2.5 Flash Image (models/gemini-2.5-flash-image) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 35\n}\n]"
+      },
+      "processing_time": 0.2566719055175781,
+      "matches": {
+        "instrument_count": false,
+        "phase": false
+      }
+    }
+  ],
+  "strategy": {
+    "detector": "yolov8_surgical",
+    "tracker": "byte_track",
+    "reasoning": "Default strategy (error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Flash Image (models/gemini-2.5-flash-image) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 35\n}\n])"
+  },
+  "api_stats": {
+    "total_calls": 16,
+    "total_time_s": 27.65768599510193
+  }
+}

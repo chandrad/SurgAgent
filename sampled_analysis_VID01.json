@@ -1,0 +1,5416 @@
+{
+  "video": "VID01",
+  "total_sampled_frames": 152,
+  "analyzed_frames": 152,
+  "instrument_accuracy": "98.0%",
+  "comparisons": [
+    {
+      "frame": 526,
+      "timestamp_s": 21.04,
+      "ground_truth": {
+        "frame": 526,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "preparation",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a hybrid tracking approach combining color-based segmentation and shape matching for the grasper. Account for potential occlusion by incorporating motion prediction based on past trajectories."
+      },
+      "processing_time": 3.6948659420013428,
+      "inst_match": true
+    },
+    {
+      "frame": 801,
+      "timestamp_s": 32.04,
+      "ground_truth": {
+        "frame": 801,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "preparation",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [],
+        "visibility_score": 8,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Template matching or deep learning based object detection models (e.g., YOLO, Faster R-CNN) fine-tuned for surgical instrument tracking. "
+      },
+      "processing_time": 2.204537868499756,
+      "inst_match": true
+    },
+    {
+      "frame": 1051,
+      "timestamp_s": 42.04,
+      "ground_truth": {
+        "frame": 1051,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Hybrid approach using deep learning for instrument detection and optical flow for motion tracking."
+      },
+      "processing_time": 2.0292420387268066,
+      "inst_match": true
+    },
+    {
+      "frame": 1301,
+      "timestamp_s": 52.04,
+      "ground_truth": {
+        "frame": 1301,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based segmentation and tracking, using shape and color cues, could be beneficial."
+      },
+      "processing_time": 2.4882171154022217,
+      "inst_match": true
+    },
+    {
+      "frame": 1551,
+      "timestamp_s": 62.04,
+      "ground_truth": {
+        "frame": 1551,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "smoke"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Shape-based tracking, potentially combined with color information, is suitable here due to the presence of distinct instrument shapes. Kalman filtering can be used to predict instrument movement."
+      },
+      "processing_time": 2.1999459266662598,
+      "inst_match": true
+    },
+    {
+      "frame": 1801,
+      "timestamp_s": 72.04,
+      "ground_truth": {
+        "frame": 1801,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use shape and color-based segmentation to track the instruments, especially the grasper.  Consider optical flow for motion estimation."
+      },
+      "processing_time": 2.3841421604156494,
+      "inst_match": true
+    },
+    {
+      "frame": 2051,
+      "timestamp_s": 82.04,
+      "ground_truth": {
+        "frame": 2051,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning based tracking methods can effectively handle instrument detection and tracking, compensating for visibility and occlusions. "
+      },
+      "processing_time": 1.9202549457550049,
+      "inst_match": true
+    },
+    {
+      "frame": 2301,
+      "timestamp_s": 92.04,
+      "ground_truth": {
+        "frame": 2301,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use visual tracking with color and shape features, Kalman filtering to smooth motion and handle partial occlusions."
+      },
+      "processing_time": 1.8626229763031006,
+      "inst_match": true
+    },
+    {
+      "frame": 2551,
+      "timestamp_s": 102.04,
+      "ground_truth": {
+        "frame": 2551,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping/dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection for instruments and anatomy, Kalman filtering to smooth tracking, and robust handling of occlusions."
+      },
+      "processing_time": 2.230012893676758,
+      "inst_match": true
+    },
+    {
+      "frame": 2801,
+      "timestamp_s": 112.04,
+      "ground_truth": {
+        "frame": 2801,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models, such as YOLO or Mask R-CNN, fine-tuned on laparoscopic instrument datasets could be utilized. A combination of shape and color features can improve robustness in low visibility conditions."
+      },
+      "processing_time": 2.242082118988037,
+      "inst_match": true
+    },
+    {
+      "frame": 3051,
+      "timestamp_s": 122.04,
+      "ground_truth": {
+        "frame": 3051,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize shape and color-based tracking with Kalman filtering to manage motion and potential occlusions."
+      },
+      "processing_time": 2.0469369888305664,
+      "inst_match": true
+    },
+    {
+      "frame": 3301,
+      "timestamp_s": 132.04,
+      "ground_truth": {
+        "frame": 3301,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use instance segmentation to track the grasper tip. A hybrid approach combining color and shape features would be beneficial to distinguish the grasper from the surrounding tissue."
+      },
+      "processing_time": 2.2560060024261475,
+      "inst_match": true
+    },
+    {
+      "frame": 3551,
+      "timestamp_s": 142.04,
+      "ground_truth": {
+        "frame": 3551,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Utilize shape and color-based tracking algorithms with robust occlusion handling."
+      },
+      "processing_time": 2.274736166000366,
+      "inst_match": true
+    },
+    {
+      "frame": 3801,
+      "timestamp_s": 152.04,
+      "ground_truth": {
+        "frame": 3801,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Hybrid approach combining color-based segmentation for the instrument body and shape analysis for the tip."
+      },
+      "processing_time": 1.770280122756958,
+      "inst_match": true
+    },
+    {
+      "frame": 4051,
+      "timestamp_s": 162.04,
+      "ground_truth": {
+        "frame": 4051,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ a hybrid tracking approach combining color-based and shape-based methods, accounting for specular reflections and possible occlusions"
+      },
+      "processing_time": 1.86201810836792,
+      "inst_match": true
+    },
+    {
+      "frame": 4301,
+      "timestamp_s": 172.04,
+      "ground_truth": {
+        "frame": 4301,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models (e.g., YOLO, Mask R-CNN) can be trained to identify and track the instruments. Consider using temporal information (e.g., Kalman filtering) to improve tracking accuracy and robustness."
+      },
+      "processing_time": 2.2933881282806396,
+      "inst_match": true
+    },
+    {
+      "frame": 4551,
+      "timestamp_s": 182.04,
+      "ground_truth": {
+        "frame": 4551,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based object detection models (e.g., YOLO, Faster R-CNN) fine-tuned on laparoscopic instrument datasets to accurately track the graspers and other instruments. Incorporate temporal information using recurrent neural networks (RNNs) or LSTMs to improve tracking robustness and handle occlusions effectively."
+      },
+      "processing_time": 1.976902961730957,
+      "inst_match": true
+    },
+    {
+      "frame": 4801,
+      "timestamp_s": 192.04,
+      "ground_truth": {
+        "frame": 4801,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize deep learning-based object detection models (e.g., Mask R-CNN, YOLO) fine-tuned on laparoscopic data to accurately identify and track the grasper and other potential instruments. Implement robust occlusion handling strategies, such as multi-view fusion or temporal smoothing, to mitigate tracking errors during instrument interactions."
+      },
+      "processing_time": 2.2654571533203125,
+      "inst_match": true
+    },
+    {
+      "frame": 5051,
+      "timestamp_s": 202.04,
+      "ground_truth": {
+        "frame": 5051,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "A hybrid tracking approach combining color-based tracking for the shaft and shape-based tracking for the instrument tips would be optimal."
+      },
+      "processing_time": 2.3272812366485596,
+      "inst_match": true
+    },
+    {
+      "frame": 5301,
+      "timestamp_s": 212.04,
+      "ground_truth": {
+        "frame": 5301,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based object detection and segmentation techniques can be used to track the bipolar instrument."
+      },
+      "processing_time": 2.2479491233825684,
+      "inst_match": true
+    },
+    {
+      "frame": 5551,
+      "timestamp_s": 222.04,
+      "ground_truth": {
+        "frame": 5551,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use a combination of color and shape-based tracking with robust occlusion handling."
+      },
+      "processing_time": 1.8858423233032227,
+      "inst_match": true
+    },
+    {
+      "frame": 5801,
+      "timestamp_s": 232.04,
+      "ground_truth": {
+        "frame": 5801,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a hybrid tracking approach, combining color-based segmentation with shape and edge detection to handle occlusion and blood interference.  A Kalman filter could smooth instrument movements."
+      },
+      "processing_time": 2.078529119491577,
+      "inst_match": true
+    },
+    {
+      "frame": 6051,
+      "timestamp_s": 242.04,
+      "ground_truth": {
+        "frame": 6051,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "A robust deep learning-based object detection model, possibly Mask R-CNN, would be suitable to track the grasper due to its ability to handle occlusions and variations in appearance. Additionally, color based tracking could be used to improve tracking results."
+      },
+      "processing_time": 2.626422882080078,
+      "inst_match": true
+    },
+    {
+      "frame": 6301,
+      "timestamp_s": 252.04,
+      "ground_truth": {
+        "frame": 6301,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking approach is recommended."
+      },
+      "processing_time": 1.8984949588775635,
+      "inst_match": true
+    },
+    {
+      "frame": 6551,
+      "timestamp_s": 262.04,
+      "ground_truth": {
+        "frame": 6551,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize color-based tracking in conjunction with shape and edge detection to maintain accurate instrument localization, especially given the presence of blood and occlusion."
+      },
+      "processing_time": 1.7398097515106201,
+      "inst_match": true
+    },
+    {
+      "frame": 6826,
+      "timestamp_s": 273.04,
+      "ground_truth": {
+        "frame": 6826,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Utilize shape and color based tracking, with attention to the clipper's distinct appearance. Implement robust occlusion handling."
+      },
+      "processing_time": 1.7782437801361084,
+      "inst_match": true
+    },
+    {
+      "frame": 7076,
+      "timestamp_s": 283.04,
+      "ground_truth": {
+        "frame": 7076,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize shape and color based tracking, complemented by deep learning for instrument segmentation to handle occlusions."
+      },
+      "processing_time": 1.8163719177246094,
+      "inst_match": true
+    },
+    {
+      "frame": 7451,
+      "timestamp_s": 298.04,
+      "ground_truth": {
+        "frame": 7451,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Region-based CNN with attention mechanism for instrument localization, combined with optical flow for motion tracking."
+      },
+      "processing_time": 2.1646652221679688,
+      "inst_match": true
+    },
+    {
+      "frame": 7726,
+      "timestamp_s": 309.04,
+      "ground_truth": {
+        "frame": 7726,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use color-based segmentation to identify the grasper against the tissue background. Deep learning models trained on laparoscopic instrument images would be helpful."
+      },
+      "processing_time": 1.8680047988891602,
+      "inst_match": true
+    },
+    {
+      "frame": 8001,
+      "timestamp_s": 320.04,
+      "ground_truth": {
+        "frame": 8001,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Use CNN-based object detection for instrument tracking, focusing on shape and texture features. Implement occlusion handling strategies."
+      },
+      "processing_time": 1.880842924118042,
+      "inst_match": true
+    },
+    {
+      "frame": 8276,
+      "timestamp_s": 331.04,
+      "ground_truth": {
+        "frame": 8276,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based segmentation can help track instruments amidst blood and tissue variations, leveraging color and texture features."
+      },
+      "processing_time": 1.8654899597167969,
+      "inst_match": true
+    },
+    {
+      "frame": 8751,
+      "timestamp_s": 350.04,
+      "ground_truth": {
+        "frame": 8751,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based object detection with attention mechanisms to focus on instrument tips and compensate for occlusion and blood interference. Incorporate temporal information using recurrent neural networks or Kalman filtering to improve tracking robustness."
+      },
+      "processing_time": 2.333440065383911,
+      "inst_match": true
+    },
+    {
+      "frame": 9001,
+      "timestamp_s": 360.04,
+      "ground_truth": {
+        "frame": 9001,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize color and shape-based instrument segmentation, combined with temporal tracking to maintain instrument identification through blood and occlusion."
+      },
+      "processing_time": 2.1794919967651367,
+      "inst_match": true
+    },
+    {
+      "frame": 9251,
+      "timestamp_s": 370.04,
+      "ground_truth": {
+        "frame": 9251,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use deep learning-based segmentation with attention mechanisms to handle occlusions and blood."
+      },
+      "processing_time": 2.0171220302581787,
+      "inst_match": true
+    },
+    {
+      "frame": 9501,
+      "timestamp_s": 380.04,
+      "ground_truth": {
+        "frame": 9501,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Using a combination of color and shape based tracking, with occlusion handling, would be most effective for following instruments."
+      },
+      "processing_time": 3.1054530143737793,
+      "inst_match": true
+    },
+    {
+      "frame": 9751,
+      "timestamp_s": 390.04,
+      "ground_truth": {
+        "frame": 9751,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based tracking with attention mechanisms to handle occlusion.  Consider color augmentation to improve robustness to blood."
+      },
+      "processing_time": 2.4007408618927,
+      "inst_match": true
+    },
+    {
+      "frame": 10001,
+      "timestamp_s": 400.04,
+      "ground_truth": {
+        "frame": 10001,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Employ color-based tracking to isolate the instrument tip, combined with shape-based tracking for the shaft. Kalman filtering may reduce noise and occlusion."
+      },
+      "processing_time": 2.1495449542999268,
+      "inst_match": true
+    },
+    {
+      "frame": 10251,
+      "timestamp_s": 410.04,
+      "ground_truth": {
+        "frame": 10251,
+        "instruments": [
+          "bipolar"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a deep learning-based object detection model fine-tuned for surgical instrument tracking in laparoscopic videos, incorporating color and shape features. Employ Kalman filtering or similar techniques to smooth the tracking and handle potential occlusions."
+      },
+      "processing_time": 2.100656747817993,
+      "inst_match": true
+    },
+    {
+      "frame": 10676,
+      "timestamp_s": 427.04,
+      "ground_truth": {
+        "frame": 10676,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Color-based tracking combined with shape and edge detection, leveraging deep learning for segmentation, is optimal in this scene."
+      },
+      "processing_time": 2.234002113342285,
+      "inst_match": true
+    },
+    {
+      "frame": 10926,
+      "timestamp_s": 437.04,
+      "ground_truth": {
+        "frame": 10926,
+        "instruments": [
+          "grasper",
+          "irrigator"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and edge detection can be useful in tracking. Focus on the tip."
+      },
+      "processing_time": 2.2570879459381104,
+      "inst_match": true
+    },
+    {
+      "frame": 11176,
+      "timestamp_s": 447.04,
+      "ground_truth": {
+        "frame": 11176,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 3,
+        "estimated_phase": "dissection",
+        "instrument_count": 0,
+        "recommendations": "Due to blood and occlusion, robust object detection using CNNs is recommended, with attention to color constancy and data augmentation with simulated surgical environments."
+      },
+      "processing_time": 1.8708350658416748,
+      "inst_match": true
+    },
+    {
+      "frame": 11426,
+      "timestamp_s": 457.04,
+      "ground_truth": {
+        "frame": 11426,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "A hybrid tracking approach combining color-based segmentation for the blue instrument shaft and shape/edge detection for the instrument tip would be beneficial.  Consider incorporating temporal filtering (e.g., Kalman filter) to smooth the tracking and account for motion blur or brief occlusions."
+      },
+      "processing_time": 2.2963600158691406,
+      "inst_match": true
+    },
+    {
+      "frame": 11676,
+      "timestamp_s": 467.04,
+      "ground_truth": {
+        "frame": 11676,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "CNN-based instrument segmentation and tracking with attention mechanisms to handle occlusions and variable lighting conditions."
+      },
+      "processing_time": 1.7285277843475342,
+      "inst_match": true
+    },
+    {
+      "frame": 11926,
+      "timestamp_s": 477.04,
+      "ground_truth": {
+        "frame": 11926,
+        "instruments": [
+          "bipolar",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based object detection with segmentation to handle potential occlusion and instrument articulation."
+      },
+      "processing_time": 1.9509210586547852,
+      "inst_match": true
+    },
+    {
+      "frame": 12176,
+      "timestamp_s": 487.04,
+      "ground_truth": {
+        "frame": 12176,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 3,
+        "estimated_phase": "dissection",
+        "instrument_count": 0,
+        "recommendations": "Due to the absence of instruments and challenges with blood and occlusion, a robust segmentation model combined with optical flow for tracking tissue deformation is recommended.  This can be supplemented with anatomical landmark detection for better context."
+      },
+      "processing_time": 2.100372314453125,
+      "inst_match": true
+    },
+    {
+      "frame": 12476,
+      "timestamp_s": 499.04,
+      "ground_truth": {
+        "frame": 12476,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "dissection",
+        "instrument_count": 0,
+        "recommendations": "Due to blood and occlusion, a combination of color and shape-based tracking, alongside robust occlusion handling mechanisms (like Kalman filters), would be beneficial."
+      },
+      "processing_time": 1.8759028911590576,
+      "inst_match": true
+    },
+    {
+      "frame": 12826,
+      "timestamp_s": 513.04,
+      "ground_truth": {
+        "frame": 12826,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use CNN-based object detection with attention mechanisms to focus on instrument tips, combined with temporal filtering (Kalman filter) to smooth the tracking and handle partial occlusions. Consider using shape priors to distinguish between different instrument types in cluttered scenes."
+      },
+      "processing_time": 2.153301954269409,
+      "inst_match": true
+    },
+    {
+      "frame": 13076,
+      "timestamp_s": 523.04,
+      "ground_truth": {
+        "frame": 13076,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking combined with motion estimation would be effective."
+      },
+      "processing_time": 1.9687631130218506,
+      "inst_match": true
+    },
+    {
+      "frame": 13926,
+      "timestamp_s": 557.04,
+      "ground_truth": {
+        "frame": 13926,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "motion_blur"
+        ],
+        "visibility_score": 3,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Due to motion blur and low visibility, use a combination of optical flow and deep learning-based object detection for tracking. Focus on the instrument's shaft for more robust tracking."
+      },
+      "processing_time": 2.911937713623047,
+      "inst_match": true
+    },
+    {
+      "frame": 14176,
+      "timestamp_s": 567.04,
+      "ground_truth": {
+        "frame": 14176,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Object detection and tracking with color and shape features. Kalman filter can improve tracking accuracy."
+      },
+      "processing_time": 2.036180019378662,
+      "inst_match": true
+    },
+    {
+      "frame": 14426,
+      "timestamp_s": 577.04,
+      "ground_truth": {
+        "frame": 14426,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize deep learning-based object detection models, incorporating attention mechanisms to enhance focus on instruments amidst blood and potential occlusions. Employ temporal smoothing techniques for stable tracking."
+      },
+      "processing_time": 2.1361379623413086,
+      "inst_match": true
+    },
+    {
+      "frame": 14676,
+      "timestamp_s": 587.04,
+      "ground_truth": {
+        "frame": 14676,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection, potentially combined with temporal filtering, would be effective for tracking instruments in this scene, particularly in the presence of blood and occlusion."
+      },
+      "processing_time": 1.9276161193847656,
+      "inst_match": true
+    },
+    {
+      "frame": 14926,
+      "timestamp_s": 597.04,
+      "ground_truth": {
+        "frame": 14926,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Edge detection and shape-based matching, coupled with color thresholding to identify the instruments."
+      },
+      "processing_time": 2.08504319190979,
+      "inst_match": true
+    },
+    {
+      "frame": 15176,
+      "timestamp_s": 607.04,
+      "ground_truth": {
+        "frame": 15176,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 3,
+        "recommendations": "Use a combination of visual tracking and instrument segmentation. Deep learning models can segment the instruments and track their movement between frames. This approach can handle partial occlusions and variations in lighting."
+      },
+      "processing_time": 2.0884311199188232,
+      "inst_match": true
+    },
+    {
+      "frame": 15426,
+      "timestamp_s": 617.04,
+      "ground_truth": {
+        "frame": 15426,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 3,
+        "recommendations": "Use a combination of color and shape-based tracking, with attention to occlusion handling."
+      },
+      "processing_time": 2.1380090713500977,
+      "inst_match": true
+    },
+    {
+      "frame": 15676,
+      "timestamp_s": 627.04,
+      "ground_truth": {
+        "frame": 15676,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based instrument segmentation combined with instance segmentation for each instrument type. Adding temporal information could help refine the tracks."
+      },
+      "processing_time": 2.138012170791626,
+      "inst_match": true
+    },
+    {
+      "frame": 15926,
+      "timestamp_s": 637.04,
+      "ground_truth": {
+        "frame": 15926,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection and tracking with consideration of occlusion handling strategies, Kalman filtering to predict instrument positions during brief occlusions."
+      },
+      "processing_time": 2.1216959953308105,
+      "inst_match": true
+    },
+    {
+      "frame": 16176,
+      "timestamp_s": 647.04,
+      "ground_truth": {
+        "frame": 16176,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning based object detection for instrument tracking, Kalman filtering to smooth instrument movement."
+      },
+      "processing_time": 1.6546919345855713,
+      "inst_match": true
+    },
+    {
+      "frame": 16426,
+      "timestamp_s": 657.04,
+      "ground_truth": {
+        "frame": 16426,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize deep learning based object detection (YOLO or similar) combined with Kalman filtering for instrument tracking. Supplement with color and shape based segmentation to handle occlusion."
+      },
+      "processing_time": 1.8874688148498535,
+      "inst_match": true
+    },
+    {
+      "frame": 16676,
+      "timestamp_s": 667.04,
+      "ground_truth": {
+        "frame": 16676,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based tracking methods using convolutional neural networks (CNNs) can be useful here due to the presence of blood. CNN's will allow you to extract the features of the instrument to track it in consecutive frames, and it could be useful to combine them with Kalman Filter or similar approaches for improving robustness."
+      },
+      "processing_time": 2.4748969078063965,
+      "inst_match": true
+    },
+    {
+      "frame": 16926,
+      "timestamp_s": 677.04,
+      "ground_truth": {
+        "frame": 16926,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use instance segmentation to accurately identify and track each instrument despite occlusion. Employ color-based tracking to maintain instrument ID consistency."
+      },
+      "processing_time": 2.0468831062316895,
+      "inst_match": true
+    },
+    {
+      "frame": 17176,
+      "timestamp_s": 687.04,
+      "ground_truth": {
+        "frame": 17176,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "calot_triangle_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use color-based tracking to identify the instrument, Kalman filtering to smooth motion, and occlusion handling based on depth information where available."
+      },
+      "processing_time": 2.22656512260437,
+      "inst_match": true
+    },
+    {
+      "frame": 17426,
+      "timestamp_s": 697.04,
+      "ground_truth": {
+        "frame": 17426,
+        "instruments": [
+          "grasper",
+          "clipper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based segmentation with attention mechanisms to handle occlusions. Focus on instrument tip tracking."
+      },
+      "processing_time": 2.1413660049438477,
+      "inst_match": true
+    },
+    {
+      "frame": 17676,
+      "timestamp_s": 707.04,
+      "ground_truth": {
+        "frame": 17676,
+        "instruments": [
+          "clipper",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize shape and color based tracking. Account for occlusion by prioritizing instrument tips."
+      },
+      "processing_time": 2.449537754058838,
+      "inst_match": true
+    },
+    {
+      "frame": 17926,
+      "timestamp_s": 717.04,
+      "ground_truth": {
+        "frame": 17926,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a deep learning-based object detection model, incorporating instance segmentation, to accurately identify and track the grasper amidst the blood and occlusion. Consider using temporal information (video sequence) for smoother tracking and handling of partial occlusions."
+      },
+      "processing_time": 2.074519157409668,
+      "inst_match": true
+    },
+    {
+      "frame": 18176,
+      "timestamp_s": 727.04,
+      "ground_truth": {
+        "frame": 18176,
+        "instruments": [
+          "clipper",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models, such as YOLO or Mask R-CNN, trained on surgical instrument datasets, can be used to track the instruments. Consider motion estimation for tracking in subsequent frames."
+      },
+      "processing_time": 2.114182949066162,
+      "inst_match": true
+    },
+    {
+      "frame": 18426,
+      "timestamp_s": 737.04,
+      "ground_truth": {
+        "frame": 18426,
+        "instruments": [
+          "clipper",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models (e.g., YOLO, Faster R-CNN) fine-tuned on laparoscopic surgical instrument datasets. Employing temporal information via recurrent neural networks or video-based object tracking algorithms could further enhance tracking accuracy and robustness."
+      },
+      "processing_time": 2.071061849594116,
+      "inst_match": true
+    },
+    {
+      "frame": 18676,
+      "timestamp_s": 747.04,
+      "ground_truth": {
+        "frame": 18676,
+        "instruments": [
+          "clipper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking with optical flow for motion estimation."
+      },
+      "processing_time": 2.108013868331909,
+      "inst_match": true
+    },
+    {
+      "frame": 18926,
+      "timestamp_s": 757.04,
+      "ground_truth": {
+        "frame": 18926,
+        "instruments": [
+          "grasper",
+          "clipper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Employ shape and color-based tracking, combined with depth estimation to handle occlusions. Train with data augmented with simulated blood and varying lighting conditions."
+      },
+      "processing_time": 1.9679908752441406,
+      "inst_match": true
+    },
+    {
+      "frame": 19226,
+      "timestamp_s": 769.04,
+      "ground_truth": {
+        "frame": 19226,
+        "instruments": [
+          "clipper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Employ deep learning-based object detection models, specifically trained on laparoscopic imagery, with techniques to handle heavy occlusion."
+      },
+      "processing_time": 1.8377461433410645,
+      "inst_match": true
+    },
+    {
+      "frame": 19601,
+      "timestamp_s": 784.04,
+      "ground_truth": {
+        "frame": 19601,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Region-based convolutional neural networks (R-CNNs) for instrument localization, combined with recurrent neural networks (RNNs) to track instrument movement and handle occlusions."
+      },
+      "processing_time": 1.9288287162780762,
+      "inst_match": true
+    },
+    {
+      "frame": 20126,
+      "timestamp_s": 805.04,
+      "ground_truth": {
+        "frame": 20126,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use CNN-based object detection models, potentially combined with recurrent neural networks to track instrument movement across frames. Consider data augmentation to address occlusion and blood."
+      },
+      "processing_time": 2.30031681060791,
+      "inst_match": true
+    },
+    {
+      "frame": 20376,
+      "timestamp_s": 815.04,
+      "ground_truth": {
+        "frame": 20376,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape-based tracking combined with color information to distinguish instrument from the surgical field."
+      },
+      "processing_time": 2.2474589347839355,
+      "inst_match": true
+    },
+    {
+      "frame": 21051,
+      "timestamp_s": 842.04,
+      "ground_truth": {
+        "frame": 21051,
+        "instruments": [
+          "clipper",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ a CNN-based object detection model fine-tuned for surgical instruments to accurately track both graspers and irrigator.  Use temporal information (Kalman filtering) to smooth instrument movements and handle brief occlusions."
+      },
+      "processing_time": 2.212317943572998,
+      "inst_match": true
+    },
+    {
+      "frame": 21301,
+      "timestamp_s": 852.04,
+      "ground_truth": {
+        "frame": 21301,
+        "instruments": [
+          "clipper",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Use visual tracking combined with shape analysis for instrument detection. Account for reflections on instruments due to lighting."
+      },
+      "processing_time": 1.869250774383545,
+      "inst_match": true
+    },
+    {
+      "frame": 21551,
+      "timestamp_s": 862.04,
+      "ground_truth": {
+        "frame": 21551,
+        "instruments": [
+          "grasper",
+          "clipper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ a hybrid tracking approach combining color-based segmentation with shape and edge detection for robust instrument localization, especially in the presence of blood and occlusion. Consider using temporal information to smooth tracking results."
+      },
+      "processing_time": 2.2650699615478516,
+      "inst_match": true
+    },
+    {
+      "frame": 21801,
+      "timestamp_s": 872.04,
+      "ground_truth": {
+        "frame": 21801,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based object detection and tracking, potentially incorporating optical flow to handle potential motion blur. Color thresholding to filter out blood could improve instrument detection."
+      },
+      "processing_time": 1.9702401161193848,
+      "inst_match": true
+    },
+    {
+      "frame": 22051,
+      "timestamp_s": 882.04,
+      "ground_truth": {
+        "frame": 22051,
+        "instruments": [
+          "scissors",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "scissors",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use instance segmentation to differentiate instruments. Train on synthetic data with simulated blood and occlusion."
+      },
+      "processing_time": 1.977997064590454,
+      "inst_match": true
+    },
+    {
+      "frame": 22301,
+      "timestamp_s": 892.04,
+      "ground_truth": {
+        "frame": 22301,
+        "instruments": [
+          "scissors",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize CNN based object detection for instruments, Kalman filtering for tracking, and instance segmentation to handle occlusion and improve robustness in complex scenes."
+      },
+      "processing_time": 2.088541030883789,
+      "inst_match": true
+    },
+    {
+      "frame": 22551,
+      "timestamp_s": 902.04,
+      "ground_truth": {
+        "frame": 22551,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "clipping_and_cutting",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use deep learning based object detection focusing on instrument tips and segmentation to handle occlusion and varying lighting."
+      },
+      "processing_time": 1.9332060813903809,
+      "inst_match": true
+    },
+    {
+      "frame": 23051,
+      "timestamp_s": 922.04,
+      "ground_truth": {
+        "frame": 23051,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based object detection models with temporal smoothing to track instruments and manage blood interference. Consider incorporating optical flow analysis for motion compensation."
+      },
+      "processing_time": 2.13838791847229,
+      "inst_match": true
+    },
+    {
+      "frame": 23301,
+      "timestamp_s": 932.04,
+      "ground_truth": {
+        "frame": 23301,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Using color and shape features for segmentation, tracking the instrument tip is crucial."
+      },
+      "processing_time": 1.7242810726165771,
+      "inst_match": true
+    },
+    {
+      "frame": 23926,
+      "timestamp_s": 957.04,
+      "ground_truth": {
+        "frame": 23926,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Utilize a hybrid approach, combining deep learning-based object detection for instrument type and pose estimation with traditional color-based tracking to handle occlusion and blood interference."
+      },
+      "processing_time": 2.2619221210479736,
+      "inst_match": true
+    },
+    {
+      "frame": 24176,
+      "timestamp_s": 967.04,
+      "ground_truth": {
+        "frame": 24176,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Color-based tracking with Kalman filtering to account for occlusion and motion blur due to blood."
+      },
+      "processing_time": 2.5225470066070557,
+      "inst_match": true
+    },
+    {
+      "frame": 24426,
+      "timestamp_s": 977.04,
+      "ground_truth": {
+        "frame": 24426,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based object detection and tracking, utilizing color and shape features, would be appropriate. Using optical flow to track motion of the clipper could also be beneficial."
+      },
+      "processing_time": 2.2669310569763184,
+      "inst_match": true
+    },
+    {
+      "frame": 24676,
+      "timestamp_s": 987.04,
+      "ground_truth": {
+        "frame": 24676,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a combined approach of shape and color-based tracking. The shape of the grasper is distinct, which can be augmented with color features due to metallic color. Tracking can be challenging if too much blood obstructs the instruments so focus on the parts that are visible."
+      },
+      "processing_time": 2.0795140266418457,
+      "inst_match": true
+    },
+    {
+      "frame": 24926,
+      "timestamp_s": 997.04,
+      "ground_truth": {
+        "frame": 24926,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize visual tracking combined with instrument shape prior for improved robustness. Handle blood carefully in segmentation model."
+      },
+      "processing_time": 2.0977590084075928,
+      "inst_match": true
+    },
+    {
+      "frame": 25351,
+      "timestamp_s": 1014.04,
+      "ground_truth": {
+        "frame": 25351,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking, combined with motion analysis."
+      },
+      "processing_time": 2.1983299255371094,
+      "inst_match": true
+    },
+    {
+      "frame": 25976,
+      "timestamp_s": 1039.04,
+      "ground_truth": {
+        "frame": 25976,
+        "instruments": [
+          "bipolar"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Use CNN-based object detection model, needs fine-tuning on laparoscopic images and tracking via Kalman filtering for improved robustness against occlusion and motion blur."
+      },
+      "processing_time": 2.1395840644836426,
+      "inst_match": true
+    },
+    {
+      "frame": 26526,
+      "timestamp_s": 1061.04,
+      "ground_truth": {
+        "frame": 26526,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color-based tracking combined with optical flow for motion estimation would be appropriate."
+      },
+      "processing_time": 1.906749963760376,
+      "inst_match": true
+    },
+    {
+      "frame": 26776,
+      "timestamp_s": 1071.04,
+      "ground_truth": {
+        "frame": 26776,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Object detection models to identify instruments, combined with tracking algorithms (e.g., Kalman filter) to follow the movements of the instrument even under occlusion.  Consider using temporal information to reduce the effects of blood."
+      },
+      "processing_time": 1.9202377796173096,
+      "inst_match": true
+    },
+    {
+      "frame": 27026,
+      "timestamp_s": 1081.04,
+      "ground_truth": {
+        "frame": 27026,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Use CNN-based object detection with data augmentation to handle blood and occlusion. Add temporal information for smoother tracking."
+      },
+      "processing_time": 2.0540289878845215,
+      "inst_match": true
+    },
+    {
+      "frame": 27276,
+      "timestamp_s": 1091.04,
+      "ground_truth": {
+        "frame": 27276,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking with robust occlusion handling."
+      },
+      "processing_time": 1.7856619358062744,
+      "inst_match": true
+    },
+    {
+      "frame": 27526,
+      "timestamp_s": 1101.04,
+      "ground_truth": {
+        "frame": 27526,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "RGB based tracking with shape and color priors for individual instruments is suitable. Mask RCNN with instrument instance segmentation for occlusion handling is recommended."
+      },
+      "processing_time": 1.9656760692596436,
+      "inst_match": true
+    },
+    {
+      "frame": 27776,
+      "timestamp_s": 1111.04,
+      "ground_truth": {
+        "frame": 27776,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Employ a color-based tracking approach focusing on the instrument's shaft and tip, complemented by shape and edge detection to distinguish it from surrounding tissue and blood. Implement occlusion handling techniques for robust tracking."
+      },
+      "processing_time": 2.255298137664795,
+      "inst_match": true
+    },
+    {
+      "frame": 28026,
+      "timestamp_s": 1121.04,
+      "ground_truth": {
+        "frame": 28026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ a hybrid tracking approach, combining color-based segmentation with shape and edge detection for robust instrument tracking. Consider Kalman filtering to predict instrument positions and smooth trajectories."
+      },
+      "processing_time": 2.323364019393921,
+      "inst_match": true
+    },
+    {
+      "frame": 28276,
+      "timestamp_s": 1131.04,
+      "ground_truth": {
+        "frame": 28276,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning based tracking, potentially instance segmentation to handle occlusions and blood interference. Utilizing color and shape features of the instrument could aid tracking."
+      },
+      "processing_time": 1.9219131469726562,
+      "inst_match": true
+    },
+    {
+      "frame": 28526,
+      "timestamp_s": 1141.04,
+      "ground_truth": {
+        "frame": 28526,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color-based tracking of the instrument tip. Consider incorporating temporal information to smooth trajectories."
+      },
+      "processing_time": 1.7932910919189453,
+      "inst_match": true
+    },
+    {
+      "frame": 28776,
+      "timestamp_s": 1151.04,
+      "ground_truth": {
+        "frame": 28776,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use CNN based tracking, possibly with segmentation to improve robustness."
+      },
+      "processing_time": 2.95155668258667,
+      "inst_match": true
+    },
+    {
+      "frame": 29026,
+      "timestamp_s": 1161.04,
+      "ground_truth": {
+        "frame": 29026,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based segmentation for instrument and tissue recognition, combined with optical flow to track instrument movement despite blood and occlusion."
+      },
+      "processing_time": 2.3068883419036865,
+      "inst_match": true
+    },
+    {
+      "frame": 29276,
+      "timestamp_s": 1171.04,
+      "ground_truth": {
+        "frame": 29276,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize deep learning-based object detection models (e.g., YOLO, Mask R-CNN) with fine-tuning on laparoscopic surgery datasets to accurately detect and track the bipolar instrument amidst blood and potential occlusion. Also, incorporate Kalman filtering to predict instrument positions and smooth trajectories, mitigating the impact of noisy detections."
+      },
+      "processing_time": 2.0386509895324707,
+      "inst_match": true
+    },
+    {
+      "frame": 29526,
+      "timestamp_s": 1181.04,
+      "ground_truth": {
+        "frame": 29526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Consider using a combination of color-based and shape-based tracking, especially for the bipolar instrument given its smaller size. Kalman filtering can help smooth trajectories."
+      },
+      "processing_time": 2.2505338191986084,
+      "inst_match": true
+    },
+    {
+      "frame": 29776,
+      "timestamp_s": 1191.04,
+      "ground_truth": {
+        "frame": 29776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize visual tracking focusing on instrument shaft and tip, incorporating color and edge detection. Kalman filtering can smooth tracking and predict movements."
+      },
+      "processing_time": 2.462491989135742,
+      "inst_match": true
+    },
+    {
+      "frame": 30026,
+      "timestamp_s": 1201.04,
+      "ground_truth": {
+        "frame": 30026,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models, such as Mask R-CNN, are recommended to enhance instrument tracking performance under occlusion."
+      },
+      "processing_time": 2.527911901473999,
+      "inst_match": true
+    },
+    {
+      "frame": 30276,
+      "timestamp_s": 1211.04,
+      "ground_truth": {
+        "frame": 30276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "A hybrid tracking approach combining color-based tracking for the shaft and shape-based tracking for the tips is recommended, potentially using deep learning for instrument segmentation."
+      },
+      "processing_time": 2.0941057205200195,
+      "inst_match": true
+    },
+    {
+      "frame": 30526,
+      "timestamp_s": 1221.04,
+      "ground_truth": {
+        "frame": 30526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning based tracking combining appearance and motion cues would be beneficial. Utilizing shape information and texture features can improve tracking accuracy."
+      },
+      "processing_time": 2.0775318145751953,
+      "inst_match": true
+    },
+    {
+      "frame": 30776,
+      "timestamp_s": 1231.04,
+      "ground_truth": {
+        "frame": 30776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize a deep learning based object detection model like YOLO or Mask R-CNN, trained on laparoscopic images, to track the instruments. Color thresholding can be used for bipolar."
+      },
+      "processing_time": 2.1688079833984375,
+      "inst_match": true
+    },
+    {
+      "frame": 31026,
+      "timestamp_s": 1241.04,
+      "ground_truth": {
+        "frame": 31026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection and tracking, combined with optical flow for motion estimation."
+      },
+      "processing_time": 2.0031816959381104,
+      "inst_match": true
+    },
+    {
+      "frame": 31276,
+      "timestamp_s": 1251.04,
+      "ground_truth": {
+        "frame": 31276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 3,
+        "recommendations": "CNN-based tracking combined with optical flow for motion estimation. Incorporate shape priors for instruments."
+      },
+      "processing_time": 2.532122850418091,
+      "inst_match": true
+    },
+    {
+      "frame": 31526,
+      "timestamp_s": 1261.04,
+      "ground_truth": {
+        "frame": 31526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 3,
+        "recommendations": "Combined approach using shape and color based tracking with robust occlusion handling."
+      },
+      "processing_time": 2.688446044921875,
+      "inst_match": true
+    },
+    {
+      "frame": 31776,
+      "timestamp_s": 1271.04,
+      "ground_truth": {
+        "frame": 31776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Deep learning based object detection (YOLOv5 or similar) with bounding box regression for instrument tracking. Attention mechanisms for handling occlusion."
+      },
+      "processing_time": 1.9342780113220215,
+      "inst_match": false
+    },
+    {
+      "frame": 32026,
+      "timestamp_s": 1281.04,
+      "ground_truth": {
+        "frame": 32026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based object detection models, specifically trained on laparoscopic imagery, incorporating instance segmentation for precise instrument localization. Enforce real-time data augmentation to increase robustness to blood and occlusion."
+      },
+      "processing_time": 2.3108339309692383,
+      "inst_match": true
+    },
+    {
+      "frame": 32276,
+      "timestamp_s": 1291.04,
+      "ground_truth": {
+        "frame": 32276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "hook",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize deep learning-based instrument segmentation combined with optical flow to track instruments accurately, even with occlusion."
+      },
+      "processing_time": 2.672078847885132,
+      "inst_match": true
+    },
+    {
+      "frame": 32526,
+      "timestamp_s": 1301.04,
+      "ground_truth": {
+        "frame": 32526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Optical flow and deep learning-based tracking for instruments, with attention to appearance changes due to blood."
+      },
+      "processing_time": 2.146050214767456,
+      "inst_match": true
+    },
+    {
+      "frame": 32776,
+      "timestamp_s": 1311.04,
+      "ground_truth": {
+        "frame": 32776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "A hybrid approach combining color-based segmentation for the shaft and shape-based tracking (e.g., using edge detection and contour analysis) for the instrument tips would be effective."
+      },
+      "processing_time": 2.013591766357422,
+      "inst_match": true
+    },
+    {
+      "frame": 33026,
+      "timestamp_s": 1321.04,
+      "ground_truth": {
+        "frame": 33026,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use of shape and color based tracking, with Kalman filtering for motion prediction."
+      },
+      "processing_time": 2.075690984725952,
+      "inst_match": true
+    },
+    {
+      "frame": 33276,
+      "timestamp_s": 1331.04,
+      "ground_truth": {
+        "frame": 33276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Use a combination of shape and color based tracking for the clipper, and optical flow for the grasper to handle potential occlusions. Consider deep learning approaches for robust instrument segmentation."
+      },
+      "processing_time": 2.038444995880127,
+      "inst_match": true
+    },
+    {
+      "frame": 33526,
+      "timestamp_s": 1341.04,
+      "ground_truth": {
+        "frame": 33526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use a deep learning model that leverages both shape and color information. Also consider the integration of temporal information to improve robustness."
+      },
+      "processing_time": 2.1312949657440186,
+      "inst_match": true
+    },
+    {
+      "frame": 33776,
+      "timestamp_s": 1351.04,
+      "ground_truth": {
+        "frame": 33776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Use visual tracking with shape priors, potentially aided by depth information if available, to track the clipper. Handle occlusions via Kalman filtering or particle filtering."
+      },
+      "processing_time": 2.487182140350342,
+      "inst_match": true
+    },
+    {
+      "frame": 34026,
+      "timestamp_s": 1361.04,
+      "ground_truth": {
+        "frame": 34026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Region-based CNN with attention mechanisms to handle occlusion and varying lighting conditions is recommended."
+      },
+      "processing_time": 2.023843765258789,
+      "inst_match": true
+    },
+    {
+      "frame": 34276,
+      "timestamp_s": 1371.04,
+      "ground_truth": {
+        "frame": 34276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "A combination of color and shape-based tracking, specifically focusing on the metallic sheen of the bipolar tip would be the best approach. Anomaly detection for occlusions and blood is recommended."
+      },
+      "processing_time": 1.974472999572754,
+      "inst_match": true
+    },
+    {
+      "frame": 34526,
+      "timestamp_s": 1381.04,
+      "ground_truth": {
+        "frame": 34526,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking with occlusion handling"
+      },
+      "processing_time": 1.8719761371612549,
+      "inst_match": true
+    },
+    {
+      "frame": 34776,
+      "timestamp_s": 1391.04,
+      "ground_truth": {
+        "frame": 34776,
+        "instruments": [
+          "hook"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize deep learning-based object detection, focusing on instrument tips, with color thresholding and shape analysis to refine tracking in low visibility and potential occlusion."
+      },
+      "processing_time": 1.8505289554595947,
+      "inst_match": true
+    },
+    {
+      "frame": 35026,
+      "timestamp_s": 1401.04,
+      "ground_truth": {
+        "frame": 35026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Region-based CNN with attention mechanisms to handle occlusion and variable lighting."
+      },
+      "processing_time": 1.6891191005706787,
+      "inst_match": true
+    },
+    {
+      "frame": 35276,
+      "timestamp_s": 1411.04,
+      "ground_truth": {
+        "frame": 35276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning based object detection (YOLO or similar) followed by tracking with Kalman filtering to maintain instrument ID through occlusions and motion."
+      },
+      "processing_time": 2.1546921730041504,
+      "inst_match": true
+    },
+    {
+      "frame": 35526,
+      "timestamp_s": 1421.04,
+      "ground_truth": {
+        "frame": 35526,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use deep learning-based object detection with attention mechanisms to handle occlusion and varying lighting conditions. Train the model on a large dataset of laparoscopic images with diverse instruments and surgical phases."
+      },
+      "processing_time": 1.9718172550201416,
+      "inst_match": true
+    },
+    {
+      "frame": 35776,
+      "timestamp_s": 1431.04,
+      "ground_truth": {
+        "frame": 35776,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Utilize a hybrid tracking approach combining color-based segmentation with shape and edge detection to identify and track instruments, particularly the clipper. A Kalman filter can smooth tracking trajectories."
+      },
+      "processing_time": 2.0268337726593018,
+      "inst_match": true
+    },
+    {
+      "frame": 36026,
+      "timestamp_s": 1441.04,
+      "ground_truth": {
+        "frame": 36026,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "A combination of shape and color-based tracking may be optimal for these instruments, focusing on edge detection to identify the grasper and clipper edges. Training tracking algorithm for identifying the clipper applying."
+      },
+      "processing_time": 2.035538911819458,
+      "inst_match": true
+    },
+    {
+      "frame": 36276,
+      "timestamp_s": 1451.04,
+      "ground_truth": {
+        "frame": 36276,
+        "instruments": [
+          "grasper",
+          "hook"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ deep learning-based instrument segmentation and tracking methods combined with edge detection to improve accuracy in occluded and low visibility regions."
+      },
+      "processing_time": 2.2631430625915527,
+      "inst_match": true
+    },
+    {
+      "frame": 36651,
+      "timestamp_s": 1466.04,
+      "ground_truth": {
+        "frame": 36651,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Utilize a combination of shape and texture-based tracking. The grasper can be tracked using a contour-based approach, refined with optical flow to account for movement. Occlusion handling will be necessary."
+      },
+      "processing_time": 2.626378059387207,
+      "inst_match": true
+    },
+    {
+      "frame": 36901,
+      "timestamp_s": 1476.04,
+      "ground_truth": {
+        "frame": 36901,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_dissection",
+        "challenges": [
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Use CNN-based tracking with attention mechanisms to focus on instrument features and handle occlusions."
+      },
+      "processing_time": 1.9486680030822754,
+      "inst_match": true
+    },
+    {
+      "frame": 37576,
+      "timestamp_s": 1503.04,
+      "ground_truth": {
+        "frame": 37576,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "A combination of shape and color based tracking can be used with a Kalman filter to estimate the position of the grasper."
+      },
+      "processing_time": 2.2087228298187256,
+      "inst_match": true
+    },
+    {
+      "frame": 37826,
+      "timestamp_s": 1513.04,
+      "ground_truth": {
+        "frame": 37826,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Use shape and color based tracking for the grasper and clipper. Deeper model would better find the tools position"
+      },
+      "processing_time": 1.6573917865753174,
+      "inst_match": true
+    },
+    {
+      "frame": 38076,
+      "timestamp_s": 1523.04,
+      "ground_truth": {
+        "frame": 38076,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "packaging",
+        "instrument_count": 3,
+        "recommendations": "Deep learning-based segmentation models with attention mechanisms can handle occlusion."
+      },
+      "processing_time": 2.001192092895508,
+      "inst_match": true
+    },
+    {
+      "frame": 38326,
+      "timestamp_s": 1533.04,
+      "ground_truth": {
+        "frame": 38326,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "packaging",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "packaging",
+        "instrument_count": 2,
+        "recommendations": "Utilize CNN-based object detection models (YOLO, Mask R-CNN) fine-tuned for surgical instrument recognition. Employ data augmentation techniques to handle variations in lighting, angle, and instrument appearance. Consider Kalman filtering to smooth instrument tracking over time."
+      },
+      "processing_time": 2.1155028343200684,
+      "inst_match": true
+    },
+    {
+      "frame": 38576,
+      "timestamp_s": 1543.04,
+      "ground_truth": {
+        "frame": 38576,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "packaging",
+        "instrument_count": 1,
+        "recommendations": "Shape and color based tracking is recommended, due to the presence of occlusion."
+      },
+      "processing_time": 1.8443710803985596,
+      "inst_match": false
+    },
+    {
+      "frame": 38826,
+      "timestamp_s": 1553.04,
+      "ground_truth": {
+        "frame": 38826,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [],
+        "visibility_score": 8,
+        "estimated_phase": "packaging",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection models (e.g., YOLO, Mask R-CNN) could be used for real-time instrument tracking. Adding a temporal component (e.g., using an LSTM) may improve tracking accuracy with partial occlusions."
+      },
+      "processing_time": 2.623307943344116,
+      "inst_match": true
+    },
+    {
+      "frame": 39076,
+      "timestamp_s": 1563.04,
+      "ground_truth": {
+        "frame": 39076,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "packaging",
+        "instrument_count": 2,
+        "recommendations": "Use shape and color based tracking, combined with depth estimation if available, to handle occlusions."
+      },
+      "processing_time": 2.294490098953247,
+      "inst_match": true
+    },
+    {
+      "frame": 39326,
+      "timestamp_s": 1573.04,
+      "ground_truth": {
+        "frame": 39326,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "packaging",
+        "instrument_count": 3,
+        "recommendations": "Use shape and color-based tracking.  Pay close attention to instrument segmentation to handle partial occlusions."
+      },
+      "processing_time": 2.177912712097168,
+      "inst_match": true
+    },
+    {
+      "frame": 39576,
+      "timestamp_s": 1583.04,
+      "ground_truth": {
+        "frame": 39576,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_packaging",
+        "challenges": [
+          "occlusion",
+          "smoke"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 5,
+        "estimated_phase": "packaging",
+        "instrument_count": 3,
+        "recommendations": "Utilize deep learning based object detection models, such as Mask R-CNN, trained on laparoscopic video datasets. Consider implementing instance segmentation to better differentiate between the packaging bag and the surgical instruments."
+      },
+      "processing_time": 2.2975568771362305,
+      "inst_match": true
+    },
+    {
+      "frame": 39826,
+      "timestamp_s": 1593.04,
+      "ground_truth": {
+        "frame": 39826,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Employ deep learning-based object detection (e.g., YOLO, Faster R-CNN) fine-tuned on laparoscopic instrument datasets, with attention mechanisms to handle occlusion and context awareness for accurate instrument localization and tracking."
+      },
+      "processing_time": 1.9728031158447266,
+      "inst_match": true
+    },
+    {
+      "frame": 40076,
+      "timestamp_s": 1603.04,
+      "ground_truth": {
+        "frame": 40076,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Deep learning-based object detection and tracking, utilizing temporal information between frames to improve robustness and accuracy of instrument tracking."
+      },
+      "processing_time": 1.6349828243255615,
+      "inst_match": true
+    },
+    {
+      "frame": 40326,
+      "timestamp_s": 1613.04,
+      "ground_truth": {
+        "frame": 40326,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based instance segmentation for precise instrument localization and tracking, considering specular reflections and complex interactions."
+      },
+      "processing_time": 2.4131996631622314,
+      "inst_match": true
+    },
+    {
+      "frame": 40576,
+      "timestamp_s": 1623.04,
+      "ground_truth": {
+        "frame": 40576,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "clipping",
+        "instrument_count": 3,
+        "recommendations": "Utilize instance segmentation to distinguish instruments and organ tissue despite occlusion and blood. Consider temporal information for smoother tracking."
+      },
+      "processing_time": 2.051337957382202,
+      "inst_match": false
+    },
+    {
+      "frame": 40826,
+      "timestamp_s": 1633.04,
+      "ground_truth": {
+        "frame": 40826,
+        "instruments": [
+          "irrigator"
+        ],
+        "instrument_count": 1,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Use deep learning-based object detection with instance segmentation to accurately identify and track the clipper, even under partial occlusion. Focus on shape and color features, as well as context with the surrounding tissue."
+      },
+      "processing_time": 1.9652390480041504,
+      "inst_match": true
+    },
+    {
+      "frame": 41076,
+      "timestamp_s": 1643.04,
+      "ground_truth": {
+        "frame": 41076,
+        "instruments": [
+          "grasper",
+          "irrigator"
+        ],
+        "instrument_count": 2,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood",
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 3,
+        "recommendations": "Use a combined approach of shape and color-based tracking, with consideration for occlusion handling using optical flow or instance segmentation.  Prioritize clipper tracking due to its critical role."
+      },
+      "processing_time": 2.5537407398223877,
+      "inst_match": true
+    },
+    {
+      "frame": 41326,
+      "timestamp_s": 1653.04,
+      "ground_truth": {
+        "frame": 41326,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "cleaning_and_coagulation",
+        "challenges": [
+          "blood"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 4,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Object detection followed by instance segmentation, with focus on metallic parts and shape for clipper detection."
+      },
+      "processing_time": 1.8679349422454834,
+      "inst_match": true
+    },
+    {
+      "frame": 41576,
+      "timestamp_s": 1663.04,
+      "ground_truth": {
+        "frame": 41576,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_retraction",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "irrigator",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "packaging",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based segmentation for grasper and irrigator, combined with classical tracking methods like Kalman filtering or optical flow to predict movement. Focus on texture features for robust instrument identification."
+      },
+      "processing_time": 2.035076141357422,
+      "inst_match": true
+    },
+    {
+      "frame": 41826,
+      "timestamp_s": 1673.04,
+      "ground_truth": {
+        "frame": 41826,
+        "instruments": [
+          "specimen-bag"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_retraction",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape-based tracking with color cues for the grasper would be a good approach. Handle occlusion by predicting instrument motion."
+      },
+      "processing_time": 1.6195220947265625,
+      "inst_match": true
+    },
+    {
+      "frame": 42126,
+      "timestamp_s": 1685.04,
+      "ground_truth": {
+        "frame": 42126,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 3,
+        "phase": "gallbladder_retraction",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 7,
+        "estimated_phase": "clipping",
+        "instrument_count": 2,
+        "recommendations": "Deep learning-based object detection combined with instance segmentation to accurately identify and track instruments, even with partial occlusions. Employing temporal information can enhance tracking robustness."
+      },
+      "processing_time": 1.8806140422821045,
+      "inst_match": true
+    },
+    {
+      "frame": 42951,
+      "timestamp_s": 1718.04,
+      "ground_truth": {
+        "frame": 42951,
+        "instruments": [
+          "grasper"
+        ],
+        "instrument_count": 1,
+        "phase": "gallbladder_retraction",
+        "challenges": []
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Utilize a combination of shape and color-based tracking. Focus on edge detection to refine the instrument boundaries due to potential occlusions. Consider using optical flow to track instrument movement in subsequent frames."
+      },
+      "processing_time": 2.565661907196045,
+      "inst_match": true
+    },
+    {
+      "frame": 43526,
+      "timestamp_s": 1741.04,
+      "ground_truth": {
+        "frame": 43526,
+        "instruments": [
+          "specimen-bag",
+          "grasper"
+        ],
+        "instrument_count": 2,
+        "phase": "gallbladder_retraction",
+        "challenges": [
+          "occlusion"
+        ]
+      },
+      "gemini_analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Shape and color-based tracking, with context aware occlusion handling."
+      },
+      "processing_time": 2.5186498165130615,
+      "inst_match": true
+    }
+  ]
+}

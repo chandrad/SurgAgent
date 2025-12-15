@@ -1,0 +1,150 @@
+[
+  {
+    "scenario": "Basic Tracking",
+    "difficulty": "easy",
+    "metrics": {
+      "hota": 0.87,
+      "map": 0.83,
+      "reasoning_quality": 0.667
+    },
+    "composite_score": 0.8061999999999999,
+    "status": "PASS",
+    "agent_trace": [
+      {
+        "stage": "scene_analysis",
+        "timestamp_ms": 1765816401860,
+        "action": "Analyzed first 5 frames of easy scene",
+        "reasoning": "Detected clear surgical field"
+      },
+      {
+        "stage": "tool_selection",
+        "timestamp_ms": 1765816401910,
+        "action": "Selected optimal detection strategy with Gemini",
+        "reasoning": "Based on easy conditions, chose standard tools"
+      },
+      {
+        "stage": "tracking",
+        "timestamp_ms": 1765816403360,
+        "action": "Processed 30 frames",
+        "reasoning": "Tracking complete with adaptive strategy"
+      },
+      {
+        "stage": "validation",
+        "timestamp_ms": 1765816403860,
+        "action": "Self-assessment of tracking results",
+        "reasoning": "Average confidence: 0.94"
+      }
+    ]
+  },
+  {
+    "scenario": "Adaptive Tool Selection",
+    "difficulty": "medium",
+    "metrics": {
+      "hota": 0.75,
+      "map": 0.73,
+      "reasoning_quality": 0.767
+    },
+    "composite_score": 0.7492,
+    "status": "PASS",
+    "agent_trace": [
+      {
+        "stage": "scene_analysis",
+        "timestamp_ms": 1765816401860,
+        "action": "Analyzed first 5 frames of medium scene",
+        "reasoning": "Detected challenging surgical field"
+      },
+      {
+        "stage": "tool_selection",
+        "timestamp_ms": 1765816401910,
+        "action": "Selected optimal detection strategy with Gemini",
+        "reasoning": "Based on medium conditions, chose advanced tools"
+      },
+      {
+        "stage": "tracking",
+        "timestamp_ms": 1765816403360,
+        "action": "Processed 60 frames",
+        "reasoning": "Tracking complete with adaptive strategy"
+      },
+      {
+        "stage": "validation",
+        "timestamp_ms": 1765816403860,
+        "action": "Self-assessment of tracking results",
+        "reasoning": "Average confidence: 0.82"
+      }
+    ]
+  },
+  {
+    "scenario": "Failure Recovery",
+    "difficulty": "hard",
+    "metrics": {
+      "hota": 0.73,
+      "map": 0.68,
+      "reasoning_quality": 0.887
+    },
+    "composite_score": 0.7416999999999999,
+    "status": "PASS",
+    "agent_trace": [
+      {
+        "stage": "scene_analysis",
+        "timestamp_ms": 1765816401860,
+        "action": "Analyzed first 5 frames of hard scene",
+        "reasoning": "Detected challenging surgical field"
+      },
+      {
+        "stage": "tool_selection",
+        "timestamp_ms": 1765816401910,
+        "action": "Selected optimal detection strategy with Gemini",
+        "reasoning": "Based on hard conditions, chose advanced tools"
+      },
+      {
+        "stage": "tracking",
+        "timestamp_ms": 1765816403360,
+        "action": "Processed 60 frames",
+        "reasoning": "Tracking complete with adaptive strategy"
+      },
+      {
+        "stage": "validation",
+        "timestamp_ms": 1765816403860,
+        "action": "Self-assessment of tracking results",
+        "reasoning": "Average confidence: 0.85"
+      }
+    ]
+  },
+  {
+    "scenario": "High Performance Agent",
+    "difficulty": "hard",
+    "metrics": {
+      "hota": 0.73,
+      "map": 0.68,
+      "reasoning_quality": 0.887
+    },
+    "composite_score": 0.7416999999999999,
+    "status": "CHECK",
+    "agent_trace": [
+      {
+        "stage": "scene_analysis",
+        "timestamp_ms": 1765816401860,
+        "action": "Analyzed first 5 frames of hard scene",
+        "reasoning": "Detected challenging surgical field"
+      },
+      {
+        "stage": "tool_selection",
+        "timestamp_ms": 1765816401910,
+        "action": "Selected optimal detection strategy with Gemini",
+        "reasoning": "Based on hard conditions, chose advanced tools"
+      },
+      {
+        "stage": "tracking",
+        "timestamp_ms": 1765816403360,
+        "action": "Processed 90 frames",
+        "reasoning": "Tracking complete with adaptive strategy"
+      },
+      {
+        "stage": "validation",
+        "timestamp_ms": 1765816403860,
+        "action": "Self-assessment of tracking results",
+        "reasoning": "Average confidence: 0.86"
+      }
+    ]
+  }
+]

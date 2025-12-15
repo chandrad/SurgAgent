@@ -1,0 +1,286 @@
+{
+  "video": "VID01",
+  "video_info": {
+    "duration": 1807.0,
+    "fps": 25.0,
+    "width": 854,
+    "height": 480,
+    "total_frames": 45175
+  },
+  "frames_analyzed": 5,
+  "frame_results": [
+    {
+      "frame_index": 0,
+      "timestamp_s": 0.0,
+      "analysis": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 2,
+        "estimated_phase": "preparation",
+        "instrument_count": 0,
+        "recommendations": "No instruments are visible. Tracking would require instrument detection. Color-based segmentation could assist if tissue color contrast is high."
+      },
+      "processing_time_s": 2.98
+    },
+    {
+      "frame_index": 9035,
+      "timestamp_s": 361.4,
+      "analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Employ a hybrid tracking approach utilizing color segmentation for the blue instrument tips and a shape-based tracker for the shaft. Compensate for occlusion by using Kalman filtering to predict instrument position."
+      },
+      "processing_time_s": 1.96
+    },
+    {
+      "frame_index": 18070,
+      "timestamp_s": 722.8,
+      "analysis": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use CNN based object detection with attention mechanism to tackle occlusion and enhance instrument recognition. Incorporate temporal information for smoother tracking."
+      },
+      "processing_time_s": 1.87
+    },
+    {
+      "frame_index": 27105,
+      "timestamp_s": 1084.2,
+      "analysis": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Edge and color based tracking, along with shape features for the visible portion of the instrument."
+      },
+      "processing_time_s": 1.84
+    },
+    {
+      "frame_index": 36140,
+      "timestamp_s": 1445.6,
+      "analysis": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Shape and texture-based tracking, combined with color information where available, would be beneficial. Consider also motion cues and Kalman filtering for robust tracking."
+      },
+      "processing_time_s": 2.04
+    }
+  ],
+  "summary": {
+    "avg_visibility": 5.2,
+    "avg_instruments": 1.0,
+    "phases": [
+      "clipping",
+      "preparation",
+      "dissection"
+    ],
+    "challenges": [
+      "occlusion",
+      "blood"
+    ]
+  },
+  "strategy": {
+    "detector": "yolov8_surgical",
+    "tracker": "byte_track",
+    "reasoning": "Given the presence of occlusion and blood, a balanced approach is needed. yolov8_surgical offers good accuracy, and byte_track provides good occlusion handling without sacrificing too much speed. advanced_detector is not chosen as smoke is not present."
+  },
+  "total_api_time_s": 10.69,
+  "total_api_calls": 6,
+  "reasoning_trace": [
+    {
+      "stage": "scene_analysis",
+      "timestamp_ms": 1765818761432,
+      "action": "Analyzed surgical frame with Gemini Vision",
+      "reasoning": "Identified 0 instruments, visibility score 2",
+      "inputs": {
+        "frame_path": "/var/folders/xt/ffjxzgnd77v1vwbqbqwq98hdq9st7q/T/tmpwg2kyylr/frame_000000.png"
+      },
+      "outputs": {
+        "instruments": [],
+        "scene_challenges": [],
+        "visibility_score": 2,
+        "estimated_phase": "preparation",
+        "instrument_count": 0,
+        "recommendations": "No instruments are visible. Tracking would require instrument detection. Color-based segmentation could assist if tissue color contrast is high."
+      }
+    },
+    {
+      "stage": "scene_analysis",
+      "timestamp_ms": 1765818764412,
+      "action": "Analyzed surgical frame with Gemini Vision",
+      "reasoning": "Identified 1 instruments, visibility score 6",
+      "inputs": {
+        "frame_path": "/var/folders/xt/ffjxzgnd77v1vwbqbqwq98hdq9st7q/T/tmpwg2kyylr/frame_009035.png"
+      },
+      "outputs": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Employ a hybrid tracking approach utilizing color segmentation for the blue instrument tips and a shape-based tracker for the shaft. Compensate for occlusion by using Kalman filtering to predict instrument position."
+      }
+    },
+    {
+      "stage": "scene_analysis",
+      "timestamp_ms": 1765818766371,
+      "action": "Analyzed surgical frame with Gemini Vision",
+      "reasoning": "Identified 2 instruments, visibility score 6",
+      "inputs": {
+        "frame_path": "/var/folders/xt/ffjxzgnd77v1vwbqbqwq98hdq9st7q/T/tmpwg2kyylr/frame_018070.png"
+      },
+      "outputs": {
+        "instruments": [
+          {
+            "type": "grasper",
+            "visible": true
+          },
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 2,
+        "recommendations": "Use CNN based object detection with attention mechanism to tackle occlusion and enhance instrument recognition. Incorporate temporal information for smoother tracking."
+      }
+    },
+    {
+      "stage": "scene_analysis",
+      "timestamp_ms": 1765818768242,
+      "action": "Analyzed surgical frame with Gemini Vision",
+      "reasoning": "Identified 1 instruments, visibility score 6",
+      "inputs": {
+        "frame_path": "/var/folders/xt/ffjxzgnd77v1vwbqbqwq98hdq9st7q/T/tmpwg2kyylr/frame_027105.png"
+      },
+      "outputs": {
+        "instruments": [
+          {
+            "type": "bipolar",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "blood",
+          "occlusion"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "dissection",
+        "instrument_count": 1,
+        "recommendations": "Edge and color based tracking, along with shape features for the visible portion of the instrument."
+      }
+    },
+    {
+      "stage": "scene_analysis",
+      "timestamp_ms": 1765818770085,
+      "action": "Analyzed surgical frame with Gemini Vision",
+      "reasoning": "Identified 1 instruments, visibility score 6",
+      "inputs": {
+        "frame_path": "/var/folders/xt/ffjxzgnd77v1vwbqbqwq98hdq9st7q/T/tmpwg2kyylr/frame_036140.png"
+      },
+      "outputs": {
+        "instruments": [
+          {
+            "type": "clipper",
+            "visible": true
+          }
+        ],
+        "scene_challenges": [
+          "occlusion",
+          "blood"
+        ],
+        "visibility_score": 6,
+        "estimated_phase": "clipping",
+        "instrument_count": 1,
+        "recommendations": "Shape and texture-based tracking, combined with color information where available, would be beneficial. Consider also motion cues and Kalman filtering for robust tracking."
+      }
+    },
+    {
+      "stage": "tool_selection",
+      "timestamp_ms": 1765818772123,
+      "action": "Selected yolov8_surgical + byte_track",
+      "reasoning": "Given the presence of occlusion and blood, a balanced approach is needed. yolov8_surgical offers good accuracy, and byte_track provides good occlusion handling without sacrificing too much speed. advanced_detector is not chosen as smoke is not present.",
+      "inputs": {
+        "scene_analysis": {
+          "instruments": [
+            {
+              "type": "clipper",
+              "visible": true
+            }
+          ],
+          "scene_challenges": [
+            "occlusion",
+            "blood"
+          ],
+          "visibility_score": 6,
+          "estimated_phase": "clipping",
+          "instrument_count": 1,
+          "recommendations": "Shape and texture-based tracking, combined with color information where available, would be beneficial. Consider also motion cues and Kalman filtering for robust tracking."
+        }
+      },
+      "outputs": {
+        "detector": "yolov8_surgical",
+        "tracker": "byte_track",
+        "reasoning": "Given the presence of occlusion and blood, a balanced approach is needed. yolov8_surgical offers good accuracy, and byte_track provides good occlusion handling without sacrificing too much speed. advanced_detector is not chosen as smoke is not present."
+      }
+    }
+  ]
+}
